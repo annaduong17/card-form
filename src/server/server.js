@@ -1,4 +1,17 @@
 const express = require('express');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb+srv://thanhduong81959:GOASUbo14TQsh94U@cluster0.hs3frd6.mongodb.net/test');
+
+const db = mongoose.connection;
+db.on('error', (error) => {
+  console.error('MongoDB connection error', error);
+})
+
+db.once('open', () => {
+  console.log("Database connected");
+})
+
 
 const app = express();
 
