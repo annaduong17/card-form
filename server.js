@@ -1,0 +1,36 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const MONGO_URI = 'mongodb+srv://thanhduong81959:GOASUbo14TQsh94U@cluster0.hs3frd6.mongodb.net/test';
+const PORT = 8080;
+
+
+mongoose.connect(MONGO_URI)
+.then(() => console.log('Connected to Mongo DB.'))
+  .catch(err => console.log(err));
+
+const app = express();
+
+app.get('/signin', (req, res) => {
+  res.send('This is the sign in page');
+});
+
+app.post('/signin', (req, res) => {
+  
+});
+
+app.get('/register', (req, res) => {
+  res.send('This is the sign up page');
+});
+
+app.post('/register', (req, res) => {
+  
+});
+
+app.all("*", (req, res, next) => {
+  
+})
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}...`);
+})
+
