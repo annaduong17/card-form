@@ -1,3 +1,10 @@
+/* 
+"start:frontend": "react-scripts start node server.js",
+    "start:backend": "nodemon src/server/server.js",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+*/
+
+
 const express = require('express');
 const mongoose = require('mongoose');
 const MONGO_URI = 'mongodb+srv://thanhduong81959:GOASUbo14TQsh94U@cluster0.hs3frd6.mongodb.net/test';

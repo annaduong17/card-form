@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.card-front-container {
+  width: 40vw;
+  height: 25vw;
+  background-image: url("../src/images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.card-back-container {
+  width: 40vw;
+  height: auto;
+  padding: 10vw;
+  background-image: url("../src/images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.left {
+  background-image: url('../src/images/bg-main-desktop.png');
+  background-repeat: no-repeat;
+}
